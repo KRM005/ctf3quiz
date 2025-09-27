@@ -6,7 +6,7 @@ import downloadPDF from "./utils/downloadPDF";
 export default function App() {
   const [step, setStep] = useState("start"); // start, quiz, result
   const [teamName, setTeamName] = useState("");
-  const [flagColor, setFlagColor] = useState("blue");
+  const [flagColor, setFlagColor] = useState("");
   const [currentSet, setCurrentSet] = useState(null);
   const [availableSets, setAvailableSets] = useState([]); // Track unused sets
   const [usedSets, setUsedSets] = useState([]); // Track used sets for duplicate prevention
