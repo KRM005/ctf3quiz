@@ -1,97 +1,412 @@
 [
   {
-    "question": "What is the time complexity of the merge sort algorithm in the average case?",
-    "options": ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
-    "answer": "O(n log n)"
+    "setId": 1,
+    "setName": "Set 1",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The Nalanda University was destroyed in the 12th century by whom?",
+        "options": ["Bakhtiyar Khilji", "Sher Shah Suri", "Alauddin Khilji", "Ibrahim Lodi"],
+        "answer": "Bakhtiyar Khilji"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Time complexity of heap sort in its best case?",
+        "options": ["O(n log n)", "O(n)", "O(log n)", "O(n²)"],
+        "answer": "O(n log n)"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In RAID-5 storage, data recovery after a single disk failure works due to:",
+        "options": ["Distributed Parity", "Mirrored Blocks", "Dual Striping", "Journaling"],
+        "answer": "Distributed Parity"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "For a purely inductive circuit, the power factor is:",
+        "options": ["0", "1", "–1", "Undefined"],
+        "answer": "0"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "The early effect in BJTs leads to:",
+        "options": ["Variation in effective base width", "Reverse breakdown", "Gain collapse", "Thermal instability"],
+        "answer": "Variation in effective base width"
+      }
+    ]
   },
   {
-    "question": "Which data structure uses LIFO (Last In First Out) order?",
-    "options": ["Queue", "Stack", "Linked List", "Array"],
-    "answer": "Stack"
+    "setId": 2,
+    "setName": "Set 2",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "First Indian to win the Fields Medal?",
+        "options": ["Manjul Bhargava", "C. R. Rao", "S. Ramanujan", "D. R. Kaprekar"],
+        "answer": "Manjul Bhargava"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which scheduling algorithm may cause starvation?",
+        "options": ["Shortest Job Next", "Round Robin", "FIFO", "Priority (with aging)"],
+        "answer": "Shortest Job Next"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "The main function of ARP (Address Resolution Protocol) is:",
+        "options": ["Mapping IP to MAC", "Mapping MAC to IP", "Routing packets", "Error correction"],
+        "answer": "Mapping IP to MAC"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "A synchronous motor runs at:",
+        "options": ["Constant Speed", "Variable Speed", "Accelerating Speed", "Slip-dependent Speed"],
+        "answer": "Constant Speed"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Nyquist criterion ensures:",
+        "options": ["Closed loop stability", "Power transfer", "Frequency shift", "Gain compression"],
+        "answer": "Closed loop stability"
+      }
+    ]
   },
   {
-    "question": "In digital logic, what does XOR stand for?",
-    "options": ["Exclusive OR", "Extra OR", "Extended OR", "None of the above"],
-    "answer": "Exclusive OR"
+    "setId": 3,
+    "setName": "Set 3",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Dholavira, recently declared UNESCO heritage, is in which state?",
+        "options": ["Gujarat", "Rajasthan", "Madhya Pradesh", "Maharashtra"],
+        "answer": "Gujarat"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "A perfect hash function implies:",
+        "options": ["No collisions", "No deletions", "Uniform hashing only", "Minimal load factor"],
+        "answer": "No collisions"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "SMTP is used for:",
+        "options": ["Sending Emails", "Receiving Emails", "Remote Login", "File Transfer"],
+        "answer": "Sending Emails"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In three-phase balanced load, neutral current is:",
+        "options": ["Zero", "Line current/√3", "Equal to phase current", "Sum of line currents"],
+        "answer": "Zero"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "MOSFET threshold voltage primarily depends on:",
+        "options": ["Oxide thickness", "Drain resistance", "Gate capacitance only", "Channel doping exclusively"],
+        "answer": "Oxide thickness"
+      }
+    ]
   },
   {
-    "question": "Which layer of the OSI model is responsible for routing?",
-    "options": ["Data Link Layer", "Network Layer", "Transport Layer", "Application Layer"],
-    "answer": "Network Layer"
+    "setId": 4,
+    "setName": "Set 4",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Who authored \"Indica,\" describing Mauryan India?",
+        "options": ["Megasthenes", "Pliny", "Strabo", "Ptolemy"],
+        "answer": "Megasthenes"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Deadlock avoidance is implemented using:",
+        "options": ["Banker's Algorithm", "Peterson's Algorithm", "Dijkstra's Algorithm", "KMP Algorithm"],
+        "answer": "Banker's Algorithm"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "The subnet mask 255.255.255.192 supports how many hosts?",
+        "options": ["62", "32", "128", "254"],
+        "answer": "62"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Ferranti effect occurs in:",
+        "options": ["Long Transmission Lines", "Short Lines", "DC systems", "Grounded Networks"],
+        "answer": "Long Transmission Lines"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Avalanche breakdown occurs due to:",
+        "options": ["Carrier multiplication", "Excess doping", "Large capacitance", "Field emission"],
+        "answer": "Carrier multiplication"
+      }
+    ]
   },
   {
-    "question": "What is the SI unit of electrical resistance?",
-    "options": ["Volt", "Ampere", "Ohm", "Watt"],
-    "answer": "Ohm"
+    "setId": 5,
+    "setName": "Set 5",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which Mughal emperor built Buland Darwaza?",
+        "options": ["Akbar", "Shah Jahan", "Humayun", "Aurangzeb"],
+        "answer": "Akbar"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Minimum spanning tree algorithm that works with edge weights sorted:",
+        "options": ["Kruskal's", "Prim's", "Bellman-Ford", "Dijkstra"],
+        "answer": "Kruskal's"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "NAT is mainly used for:",
+        "options": ["Mapping private IP to public", "Encrypting data packets", "Blocking traffic", "DNS resolution"],
+        "answer": "Mapping private IP to public"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Slip of an induction motor at no load is approximately:",
+        "options": ["0", "1", "<0", ">1"],
+        "answer": "0"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "The cutoff frequency of RC low-pass filter is:",
+        "options": ["1/(2πRC)", "2πRC", "RC", "1/RC"],
+        "answer": "1/(2πRC)"
+      }
+    ]
   },
   {
-    "question": "What is the purpose of a capacitor in an electrical circuit?",
-    "options": ["To store electrical energy", "To regulate current flow", "To increase voltage", "To decrease resistance"],
-    "answer": "To store electrical energy"
+    "setId": 6,
+    "setName": "Set 6",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Who was the first Governor General of Independent India?",
+        "options": ["Lord Mountbatten", "Rajagopalachari", "Nehru", "Wavell"],
+        "answer": "Lord Mountbatten"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "The halting problem is:",
+        "options": ["Undecidable", "NP-Complete", "Polynomial-time solvable", "Linear-time solvable"],
+        "answer": "Undecidable"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In IPv6, address length is:",
+        "options": ["128 bits", "64 bits", "256 bits", "32 bits"],
+        "answer": "128 bits"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "The per unit system simplifies:",
+        "options": ["Calculations in power systems", "Load factor measurement", "Torque computation", "Capacitance design"],
+        "answer": "Calculations in power systems"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "The function of bypass capacitor in amplifier is:",
+        "options": ["Increase AC gain", "Reduce DC offset", "Supply biasing", "Lower impedance"],
+        "answer": "Increase AC gain"
+      }
+    ]
   },
   {
-    "question": "Which of the following is a branch of thermodynamics?",
-    "options": ["Equilibrium thermodynamics", "Classical thermodynamics", "Chemical thermodynamics", "All of the above"],
-    "answer": "All of the above"
+    "setId": 7,
+    "setName": "Set 7",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which Indian was awarded the 2023 Ramon Magsaysay Award?",
+        "options": ["Ravi Kannan", "Medha Patkar", "Arvind Kejriwal", "Kailash Satyarthi"],
+        "answer": "Ravi Kannan"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In a binary search tree, average case search time is:",
+        "options": ["O(log n)", "O(n)", "O(n log n)", "O(1)"],
+        "answer": "O(log n)"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which protocol secures HTTP?",
+        "options": ["TLS", "ARP", "ICMP", "FTP"],
+        "answer": "TLS"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In transformers, efficiency is maximum when:",
+        "options": ["Copper loss = Iron loss", "Copper loss = 0", "Iron loss = 0", "Load = Full load"],
+        "answer": "Copper loss = Iron loss"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "The main advantage of CMOS technology is:",
+        "options": ["Low static power dissipation", "High switching speed", "Complex fabrication", "High current drive"],
+        "answer": "Low static power dissipation"
+      }
+    ]
   },
   {
-    "question": "Which law of thermodynamics states that energy cannot be created or destroyed?",
-    "options": ["Zeroth law", "First law", "Second law", "Third law"],
-    "answer": "First law"
+    "setId": 8,
+    "setName": "Set 8",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "India's first woman to win an Olympic medal?",
+        "options": ["Karnam Malleswari", "Mary Kom", "P. V. Sindhu", "Sakshi Malik"],
+        "answer": "Karnam Malleswari"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which sorting algorithm is stable?",
+        "options": ["Merge Sort", "Heap Sort", "Quick Sort", "Selection Sort"],
+        "answer": "Merge Sort"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "DNS translates:",
+        "options": ["Domain names to IP", "IP to MAC", "URLs to Data", "Hosts to Protocols"],
+        "answer": "Domain names to IP"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "The main reason for corona in transmission lines?",
+        "options": ["Ionization of air", "Eddy currents", "Hysteresis", "Mutual inductance"],
+        "answer": "Ionization of air"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In an op-amp, ideal CMRR is:",
+        "options": ["Infinite", "Zero", "Unity", "Finite"],
+        "answer": "Infinite"
+      }
+    ]
   },
   {
-    "question": "What is the principle of superposition in wave theory?",
-    "options": ["Waves cannot interfere with each other", "The resultant displacement is the sum of individual displacements", "Waves always travel in the same direction", "None of the above"],
-    "answer": "The resultant displacement is the sum of individual displacements"
+    "setId": 9,
+    "setName": "Set 9",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which country introduced the world's first digital currency backed by central bank?",
+        "options": ["Bahamas", "Sweden", "China", "Japan"],
+        "answer": "Bahamas"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "DFA and NFA are equivalent in terms of:",
+        "options": ["Language recognition", "Time efficiency", "State minimization", "Alphabet size"],
+        "answer": "Language recognition"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "FTP operates on which ports by default?",
+        "options": ["20, 21", "23, 25", "80, 443", "8080, 21"],
+        "answer": "20, 21"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Synchronous generator generates emf due to:",
+        "options": ["Relative motion of field and armature", "Mechanical vibrations", "Eddy currents", "Core saturation"],
+        "answer": "Relative motion of field and armature"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Schmitt trigger is used for:",
+        "options": ["Removing noise from signals", "Power amplification", "Current limiting", "Pulse shaping only"],
+        "answer": "Removing noise from signals"
+      }
+    ]
   },
   {
-    "question": "What is the derivative of a function?",
-    "options": ["The rate of change of the function", "The area under the curve of the function", "The slope of the function", "Both a and c"],
-    "answer": "Both a and c"
-  },
-  {
-    "question": "Which of the following is a type of thermodynamic system?",
-    "options": ["Open system", "Closed system", "Isolated system", "All of the above"],
-    "answer": "All of the above"
-  },
-  {
-    "question": "What is the purpose of the 'static' keyword in C programming?",
-    "options": ["To declare a constant variable", "To declare a variable with a fixed memory location", "To declare a variable with a fixed value", "To declare a variable with a fixed data type"],
-    "answer": "To declare a variable with a fixed memory location"
-  },
-  {
-    "question": "What is the difference between a shallow copy and a deep copy in programming?",
-    "options": ["A shallow copy copies only the references, while a deep copy copies the actual objects", "A shallow copy copies the actual objects, while a deep copy copies only the references", "There is no difference", "A shallow copy is faster than a deep copy"],
-    "answer": "A shallow copy copies only the references, while a deep copy copies the actual objects"
-  },
-  {
-    "question": "What is the purpose of an operational amplifier in electronics?",
-    "options": ["To amplify signals", "To filter signals", "To convert analog signals to digital", "To store signals"],
-    "answer": "To amplify signals"
-  },
-  {
-    "question": "What is the difference between a process and a thread in operating systems?",
-    "options": ["A process is a program in execution, while a thread is a single sequence of instructions within a process", "A process is a single sequence of instructions, while a thread is a program in execution", "There is no difference", "A process is faster than a thread"],
-    "answer": "A process is a program in execution, while a thread is a single sequence of instructions within a process"
-  },
-  {
-    "question": "What is the chain rule in differentiation?",
-    "options": ["A rule for differentiating products of functions", "A rule for differentiating compositions of functions", "A rule for integrating functions", "A rule for solving equations"],
-    "answer": "A rule for differentiating compositions of functions"
-  },
-  {
-    "question": "What is the purpose of the 'extern' keyword in C programming?",
-    "options": ["To declare a variable that is defined in another file", "To declare a constant variable", "To declare a function that is defined in another file", "To declare a variable with a fixed value"],
-    "answer": "To declare a variable that is defined in another file"
-  },
-  {
-    "question": "What is the purpose of the 'volatile' keyword in C programming?",
-    "options": ["To declare a variable that can be modified by an external source", "To declare a constant variable", "To declare a variable with a fixed value", "To declare a variable that cannot be modified"],
-    "answer": "To declare a variable that can be modified by an external source"
-  },
-  {
-    "question": "What is the difference between a compiler and an interpreter?",
-    "options": ["A compiler translates the entire program at once, while an interpreter translates the program line by line", "A compiler translates the program line by line, while an interpreter translates the entire program at once", "There is no difference", "A compiler is faster than an interpreter"],
-    "answer": "A compiler translates the entire program at once, while an interpreter translates the program line by line"
+    "setId": 10,
+    "setName": "Set 10",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The Chipko movement was started in which state?",
+        "options": ["Uttarakhand", "Bihar", "Assam", "Gujarat"],
+        "answer": "Uttarakhand"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which data structure is used in recursion?",
+        "options": ["Stack", "Queue", "Tree", "Array"],
+        "answer": "Stack"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which layer of OSI model is responsible for encryption?",
+        "options": ["Presentation", "Network", "Session", "Transport"],
+        "answer": "Presentation"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "A phasor diagram is mainly used in:",
+        "options": ["AC analysis", "DC circuits", "Switchgear", "Magnetostatics"],
+        "answer": "AC analysis"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Gunn diode operates on:",
+        "options": ["Negative resistance", "Avalanche breakdown", "PIN effect", "Photoconduction"],
+        "answer": "Negative resistance"
+      }
+    ]
   }
 ]

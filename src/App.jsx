@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
-import questionsData from "./data/questions.json";
+import questionSets from "./data/questions.json";
+import downloadPDF from "./utils/downloadPDF";
+
 
 export default function App() {
   const [step, setStep] = useState("start"); // start, quiz, result
   const [teamName, setTeamName] = useState("");
   const [flagColor, setFlagColor] = useState("blue");
-  const [questions, setQuestions] = useState([]);
-  const [availableQuestions, setAvailableQuestions] = useState([]); // Track unused questions
+  const [currentSet, setCurrentSet] = useState(null);
+  const [availableSets, setAvailableSets] = useState([]); // Track unused sets
+  const [usedSets, setUsedSets] = useState([]); // Track used sets for duplicate prevention
   const [currentQIndex, setCurrentQIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedOption, setSelectedOption] = useState("");
@@ -17,8 +20,8 @@ export default function App() {
   // New tracking states
   const [startTimestamp, setStartTimestamp] = useState(null);
   const [endTimestamp, setEndTimestamp] = useState(null);
-  const [allQuestionsInvolved, setAllQuestionsInvolved] = useState([]);
-  const [questionChangeLog, setQuestionChangeLog] = useState([]);
+  const [allSetsInvolved, setAllSetsInvolved] = useState([]);
+  const [setChangeLog, setSetChangeLog] = useState([]);
 
   // Fisher-Yates shuffle algorithm for better randomization
   const shuffleArray = (array) => {
@@ -30,14 +33,15 @@ export default function App() {
     return shuffled;
   };
 
-  // Pick 5 random questions when quiz starts
+  // Pick 1 random question set when quiz starts
   useEffect(() => {
     if (step === "quiz") {
-      const shuffled = shuffleArray(questionsData);
-      const initialQuestions = shuffled.slice(0, 5);
+      const shuffledSets = shuffleArray(questionSets);
+      const selectedSet = shuffledSets[0];
       
-      setQuestions(initialQuestions);
-      setAvailableQuestions(shuffled.slice(5)); // Store remaining questions for changes
+      setCurrentSet(selectedSet);
+      setAvailableSets(shuffledSets.slice(1)); // Store remaining sets for changes
+      setUsedSets([selectedSet.setId]); // Track this set as used
       setCurrentQIndex(0);
       setScore(0);
       setSelectedOption("");
@@ -48,22 +52,29 @@ export default function App() {
       // Initialize tracking
       setStartTimestamp(new Date().toISOString());
       setEndTimestamp(null);
-      setAllQuestionsInvolved(initialQuestions.map(q => ({ ...q })));
-      setQuestionChangeLog([]);
+      setAllSetsInvolved([{ ...selectedSet }]);
+      setSetChangeLog([]);
     }
   }, [step]);
 
   const handleSubmit = () => {
     if (!selectedOption) return;
 
-    const isCorrect = selectedOption === questions[currentQIndex].answer;
+    const currentQuestion = currentSet.questions[currentQIndex];
+    const isCorrect = selectedOption === currentQuestion.answer;
     
     // Store user answer
     setUserAnswers(prev => [...prev, {
-      question: questions[currentQIndex].question,
+      question: currentQuestion.question,
+      domain: currentQuestion.domain,
       userAnswer: selectedOption,
-      correctAnswer: questions[currentQIndex].answer,
-      isCorrect: isCorrect
+      correctAnswer: currentQuestion.answer,
+      isCorrect: isCorrect,
+      setInfo: {
+        setId: currentSet.setId,
+        setName: currentSet.setName,
+        questionId: currentQuestion.id
+      }
     }]);
 
     if (isCorrect) {
@@ -76,14 +87,14 @@ export default function App() {
         return;
       }
     } else {
-      setFeedback(`Wrong ❌ (Correct: ${questions[currentQIndex].answer})`);
+      setFeedback(`Wrong ❌ (Correct: ${currentQuestion.answer})`);
     }
   };
 
   const handleNext = () => {
     setSelectedOption("");
     setFeedback("");
-    if (currentQIndex + 1 < questions.length) {
+    if (currentQIndex + 1 < currentSet.questions.length) {
       setCurrentQIndex((prev) => prev + 1);
     } else {
       // Quiz finished - always go to result screen
@@ -94,16 +105,24 @@ export default function App() {
   };
 
   const handleSkipQuestion = () => {
+    const currentQuestion = currentSet.questions[currentQIndex];
+    
     // Store skipped answer
     setUserAnswers(prev => [...prev, {
-      question: questions[currentQIndex].question,
+      question: currentQuestion.question,
+      domain: currentQuestion.domain,
       userAnswer: "skipped",
-      correctAnswer: questions[currentQIndex].answer,
-      isCorrect: false
+      correctAnswer: currentQuestion.answer,
+      isCorrect: false,
+      setInfo: {
+        setId: currentSet.setId,
+        setName: currentSet.setName,
+        questionId: currentQuestion.id
+      }
     }]);
 
     // Move to next question or finish quiz
-    if (currentQIndex + 1 < questions.length) {
+    if (currentQIndex + 1 < currentSet.questions.length) {
       setCurrentQIndex((prev) => prev + 1);
       setSelectedOption("");
       setFeedback("");
@@ -115,57 +134,63 @@ export default function App() {
     }
   };
 
-  const handleChangeQuestion = () => {
-    if (availableQuestions.length === 0) {
-      alert("No more questions available to swap!");
+  const handleChangeQuestionSet = () => {
+    // Filter available sets to exclude already used ones
+    const unusedSets = availableSets.filter(set => !usedSets.includes(set.setId));
+    
+    if (unusedSets.length === 0) {
+      alert("No more question sets available to swap! All sets have been used.");
       return;
     }
 
-    // Get a new random question from available questions
-    const randomIndex = Math.floor(Math.random() * availableQuestions.length);
-    const newQuestion = availableQuestions[randomIndex];
-    
-    // Replace current question with new one
-    const updatedQuestions = [...questions];
-    const oldQuestion = updatedQuestions[currentQIndex];
-    updatedQuestions[currentQIndex] = newQuestion;
-    
-    // Update available questions (remove new question, add old question)
-    const updatedAvailable = [...availableQuestions];
-    updatedAvailable.splice(randomIndex, 1); // Remove the question we just used
-    updatedAvailable.push(oldQuestion); // Add the old question back to available pool
+    // Get a new random set from unused sets
+    const randomIndex = Math.floor(Math.random() * unusedSets.length);
+    const newSet = unusedSets[randomIndex];
     
     // Track the change
     const changeLogEntry = {
       timestamp: new Date().toISOString(),
-      questionPosition: currentQIndex + 1,
-      oldQuestion: oldQuestion.question,
-      newQuestion: newQuestion.question,
-      reasonForChange: "User requested question change"
+      oldSet: {
+        setId: currentSet.setId,
+        setName: currentSet.setName
+      },
+      newSet: {
+        setId: newSet.setId,
+        setName: newSet.setName
+      },
+      reasonForChange: "User requested question set change",
+      currentProgress: `${currentQIndex + 1}/${currentSet.questions.length} questions completed`
     };
     
-    // Add new question to all questions involved if not already present
-    setAllQuestionsInvolved(prev => {
-      const exists = prev.some(q => q.question === newQuestion.question);
+    // Add new set to all sets involved if not already present
+    setAllSetsInvolved(prev => {
+      const exists = prev.some(set => set.setId === newSet.setId);
       if (!exists) {
-        return [...prev, { ...newQuestion }];
+        return [...prev, { ...newSet }];
       }
       return prev;
     });
     
-    setQuestions(updatedQuestions);
-    setAvailableQuestions(updatedAvailable);
+    // Update used sets to include the new set
+    setUsedSets(prev => [...prev, newSet.setId]);
+    
+    // Reset quiz state with new set
+    setCurrentSet(newSet);
+    setCurrentQIndex(0); // Start from beginning of new set
     setSelectedOption(""); // Clear any selected option
     setFeedback(""); // Clear any feedback
-    setQuestionChangeLog(prev => [...prev, changeLogEntry]);
+    setUserAnswers([]); // Reset answers since we're starting a new set
+    setScore(0); // Reset score
+    setSetChangeLog(prev => [...prev, changeLogEntry]);
   };
 
   const handleRestart = () => {
     // Reset everything and go back to start
     setTeamName("");
     setFlagColor("blue");
-    setQuestions([]);
-    setAvailableQuestions([]);
+    setCurrentSet(null);
+    setAvailableSets([]);
+    setUsedSets([]);
     setCurrentQIndex(0);
     setScore(0);
     setSelectedOption("");
@@ -174,8 +199,8 @@ export default function App() {
     setUserAnswers([]);
     setStartTimestamp(null);
     setEndTimestamp(null);
-    setAllQuestionsInvolved([]);
-    setQuestionChangeLog([]);
+    setAllSetsInvolved([]);
+    setSetChangeLog([]);
     setStep("start");
   };
 
@@ -188,7 +213,7 @@ export default function App() {
       teamName,
       flagColor,
       score,
-      totalQuestions: questions.length,
+      totalQuestions: currentSet ? currentSet.questions.length : 0,
       passed: score >= 3,
       
       // Timing information
@@ -196,50 +221,77 @@ export default function App() {
       endTimestamp,
       durationInSeconds: duration,
       
-      // All questions that were involved in the quiz (including changed ones)
-      allQuestionsInvolved: allQuestionsInvolved.map((q, i) => ({
-        questionId: i + 1,
-        question: q.question,
-        options: q.options,
-        correctAnswer: q.answer,
-        wasUsedInFinalQuiz: questions.some(finalQ => finalQ.question === q.question)
+      // Current question set info
+      finalQuestionSet: currentSet ? {
+        setId: currentSet.setId,
+        setName: currentSet.setName,
+        questions: currentSet.questions
+      } : null,
+      
+      // All question sets that were involved
+      allQuestionSetsInvolved: allSetsInvolved.map(set => ({
+        setId: set.setId,
+        setName: set.setName,
+        totalQuestions: set.questions.length,
+        wasUsedInFinalQuiz: set.setId === (currentSet?.setId || null)
       })),
       
-      // Question change log
-      questionChangeLog,
-      totalQuestionChanges: questionChangeLog.length,
+      // Set change log
+      setChangeLog,
+      totalSetChanges: setChangeLog.length,
+      usedSetIds: usedSets,
       
       // Final quiz results
-      finalQuizResults: questions.map((q, i) => ({
+      finalQuizResults: userAnswers.map((answer, i) => ({
         questionNumber: i + 1,
-        question: q.question,
-        options: q.options,
-        correctAnswer: q.answer,
-        userAnswer: userAnswers[i]?.userAnswer || "Not answered",
-        isCorrect: userAnswers[i]?.isCorrect || false
+        domain: answer.domain,
+        question: answer.question,
+        userAnswer: answer.userAnswer,
+        correctAnswer: answer.correctAnswer,
+        isCorrect: answer.isCorrect,
+        setInfo: answer.setInfo
       })),
       
       // Summary statistics
       summary: {
-        totalQuestionsEncountered: allQuestionsInvolved.length,
-        questionsChangedCount: questionChangeLog.length,
+        totalQuestionSetsEncountered: allSetsInvolved.length,
+        setsChangedCount: setChangeLog.length,
         correctAnswers: score,
         incorrectAnswers: userAnswers.filter(a => !a.isCorrect && a.userAnswer !== 'skipped').length,
         skippedQuestions: userAnswers.filter(a => a.userAnswer === 'skipped').length,
-        unansweredQuestions: questions.length - userAnswers.length,
-        flagCaptured: score >= 3
+        unansweredQuestions: (currentSet?.questions.length || 0) - userAnswers.length,
+        flagCaptured: score >= 3,
+        domainBreakdown: userAnswers.reduce((acc, answer) => {
+          if (!acc[answer.domain]) {
+            acc[answer.domain] = { correct: 0, total: 0 };
+          }
+          acc[answer.domain].total++;
+          if (answer.isCorrect) {
+            acc[answer.domain].correct++;
+          }
+          return acc;
+        }, {})
       }
     };
 
-    const blob = new Blob([JSON.stringify(resultData, null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `CTF3_Quiz_Results_${teamName}_${new Date().toISOString().slice(0,10)}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+  //   const blob = new Blob([JSON.stringify(resultData, null, 2)], {
+  //     type: "application/json",
+  //   });
+  //   const url = URL.createObjectURL(blob);
+  //   const a = document.createElement("a");
+  //   a.href = url;
+  //   a.download = `CTF3_Quiz_Results_${teamName}_${new Date().toISOString().slice(0,10)}.json`;
+  //   a.click();
+  //   URL.revokeObjectURL(url);
+  // };
+  
+  // Call PDF download instead of JSON
+  downloadPDF(resultData);
+  };
+
+  // Get unused sets count for display
+  const getUnusedSetsCount = () => {
+    return availableSets.filter(set => !usedSets.includes(set.setId)).length;
   };
 
   return (
@@ -290,38 +342,53 @@ export default function App() {
           >
             Start Quiz
           </button>
+
+          <div className="mt-4 text-sm text-gray-400">
+            <p>📚 {questionSets.length} question sets available</p>
+            <p>🎯 Each set contains 5 questions from different domains</p>
+            <p>🏆 Score 3+ correct to capture the flag!</p>
+          </div>
         </div>
       )}
 
       {/* Quiz Screen */}
-      {step === "quiz" && questions.length > 0 && (
+      {step === "quiz" && currentSet && (
         <div className="bg-gray-800 p-8 rounded-2xl shadow-xl max-w-2xl w-full border border-gray-700">
           <div className="flex justify-between mb-4">
             <span className="text-gray-400">Team: {teamName}</span>
             <span className="font-bold text-blue-400">
-              Score: {score} / 3 | Question: {currentQIndex + 1} / {questions.length}
+              Score: {score} / 3 | Question: {currentQIndex + 1} / {currentSet.questions.length}
             </span>
           </div>
 
-          <div className="flex justify-between items-start mb-4">
-            <h2 className="text-xl font-semibold flex-1 pr-4">
-              <span className="text-blue-400 font-bold">Question {currentQIndex + 1}:</span> {questions[currentQIndex].question}
+          {/* Set Information */}
+          <div className="bg-gray-700 p-3 rounded-lg mb-4 border border-gray-600">
+            <div className="flex justify-between items-center">
+              <div>
+                <span className="text-blue-400 font-semibold">{currentSet.setName}</span>
+                <span className="text-gray-400 ml-2">({currentSet.questions[currentQIndex].domain})</span>
+              </div>
+              {/* Change Question Set Button - Only show if no feedback yet and sets available */}
+              {!feedback && getUnusedSetsCount() > 0 && (
+                <button
+                  onClick={handleChangeQuestionSet}
+                  className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-lg transition text-sm whitespace-nowrap"
+                  title="Change to a different question set"
+                >
+                  🔄 Change Set
+                </button>
+              )}
+            </div>
+          </div>
+
+          <div className="mb-4">
+            <h2 className="text-xl font-semibold">
+              <span className="text-blue-400 font-bold">Question {currentQIndex + 1}:</span> {currentSet.questions[currentQIndex].question}
             </h2>
-            
-            {/* Change Question Button - Only show if no feedback yet and questions available */}
-            {!feedback && availableQuestions.length > 0 && (
-              <button
-                onClick={handleChangeQuestion}
-                className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-lg transition text-sm whitespace-nowrap"
-                title="Change to a different question"
-              >
-                🔄 Change Question
-              </button>
-            )}
           </div>
 
           <div className="grid grid-cols-1 gap-3 mb-6">
-            {questions[currentQIndex].options.map((opt, i) => (
+            {currentSet.questions[currentQIndex].options.map((opt, i) => (
               <button
                 key={i}
                 onClick={() => setSelectedOption(opt)}
@@ -368,22 +435,20 @@ export default function App() {
                 </button>
               </div>
               
-              {availableQuestions.length > 0 && (
-                <div className="text-center text-sm">
-                  <p className="text-gray-400">
-                    {availableQuestions.length} questions available to swap
+              <div className="text-center text-sm">
+                <p className="text-gray-400">
+                  {getUnusedSetsCount()} unused question sets available to swap
+                </p>
+                {setChangeLog.length > 0 && (
+                  <p className="text-yellow-400">
+                    {setChangeLog.length} set change{setChangeLog.length !== 1 ? 's' : ''} made
                   </p>
-                  {questionChangeLog.length > 0 && (
-                    <p className="text-yellow-400">
-                      {questionChangeLog.length} change{questionChangeLog.length !== 1 ? 's' : ''} made
-                    </p>
-                  )}
-                </div>
-              )}
+                )}
+              </div>
             </div>
           ) : (
             <div className="flex gap-4">
-              {currentQIndex + 1 < questions.length && !finished ? (
+              {currentQIndex + 1 < currentSet.questions.length && !finished ? (
                 <button
                   onClick={handleNext}
                   className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition"
@@ -410,14 +475,15 @@ export default function App() {
           
           <div className="text-center mb-6">
             <p className="mb-2 text-lg">Team: <span className="font-semibold text-blue-400">{teamName}</span></p>
-            <p className="mb-4 text-xl">Final Score: <span className="font-bold text-blue-400">{score} / {questions.length}</span></p>
+            <p className="mb-2 text-sm text-gray-400">Question Set: <span className="font-semibold text-yellow-400">{currentSet?.setName}</span></p>
+            <p className="mb-4 text-xl">Final Score: <span className="font-bold text-blue-400">{score} / {currentSet?.questions.length || 5}</span></p>
             
             {/* Show timing and change information */}
             {startTimestamp && endTimestamp && (
               <div className="mb-4 text-sm text-gray-400">
                 <p>Duration: {Math.round((new Date(endTimestamp) - new Date(startTimestamp)) / 1000)} seconds</p>
-                {questionChangeLog.length > 0 && (
-                  <p>Questions changed: {questionChangeLog.length} time{questionChangeLog.length !== 1 ? 's' : ''}</p>
+                {setChangeLog.length > 0 && (
+                  <p>Question sets changed: {setChangeLog.length} time{setChangeLog.length !== 1 ? 's' : ''}</p>
                 )}
               </div>
             )}
@@ -451,7 +517,7 @@ export default function App() {
               {userAnswers.map((answer, i) => (
                 <div key={i} className="p-3 rounded-lg bg-gray-700 border border-gray-600">
                   <p className="font-semibold mb-1">
-                    <span className="text-blue-400">Q{i + 1}:</span> {answer.question}
+                    <span className="text-blue-400">Q{i + 1} ({answer.domain}):</span> {answer.question}
                   </p>
                   <p className={`text-sm ${answer.isCorrect ? 'text-green-400' : answer.userAnswer === 'skipped' ? 'text-yellow-400' : 'text-red-400'}`}>
                     Your answer: {answer.userAnswer === 'skipped' ? 'Skipped ⏭️' : answer.userAnswer} {answer.isCorrect ? '✅' : answer.userAnswer === 'skipped' ? '⏭️' : '❌'}
@@ -461,6 +527,31 @@ export default function App() {
                       Correct answer: {answer.correctAnswer}
                     </p>
                   )}
+                  <p className="text-xs text-gray-500 mt-1">
+                    From: {answer.setInfo.setName} - {answer.setInfo.questionId}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Domain Performance Breakdown */}
+          <div className="mb-6">
+            <h3 className="text-lg font-semibold mb-4 text-blue-400">Domain Performance:</h3>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-2 text-sm">
+              {Object.entries(userAnswers.reduce((acc, answer) => {
+                if (!acc[answer.domain]) {
+                  acc[answer.domain] = { correct: 0, total: 0 };
+                }
+                acc[answer.domain].total++;
+                if (answer.isCorrect) {
+                  acc[answer.domain].correct++;
+                }
+                return acc;
+              }, {})).map(([domain, stats]) => (
+                <div key={domain} className="bg-gray-700 p-2 rounded text-center">
+                  <p className="font-semibold text-yellow-400">{domain}</p>
+                  <p className="text-gray-300">{stats.correct}/{stats.total}</p>
                 </div>
               ))}
             </div>
@@ -487,3 +578,13 @@ export default function App() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
