@@ -114,8 +114,8 @@ export default function downloadPDF(resultData = {}) {
   // Basic metadata
   doc.setFontSize(11);
   const meta = [
-    `Team: ${resultData.teamName || "N/A"}`,
-    `Flag Color: ${resultData.flagColor || "N/A"}`,
+    `Coordinator's Flag colour: ${resultData.teamName || "N/A"}`,
+    `Opponent's Flag Colour: ${resultData.flagColor || "N/A"}`,
     `Score: ${resultData.score ?? "N/A"} / ${resultData.totalQuestions ?? "N/A"}`,
     `Passed: ${resultData.passed ? "Yes" : "No"}`,
     `Start: ${formatDate(resultData.startTimestamp)}`,
