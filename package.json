@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/trivichi/CTF3-quiz",
+  "homepage": "https://krm005.github.io/ctf3quiz",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
