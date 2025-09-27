@@ -408,5 +408,2085 @@
         "answer": "Negative resistance"
       }
     ]
+  },
+  {
+    "setId": 6,
+    "setName": "Set 6",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Who was the first Governor General of Independent India?",
+        "options": ["Lord Mountbatten", "Rajagopalachari", "Nehru", "Wavell"],
+        "answer": "Lord Mountbatten"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "The halting problem is:",
+        "options": ["Undecidable", "NP-Complete", "Polynomial-time solvable", "Linear-time solvable"],
+        "answer": "Undecidable"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In IPv6, address length is:",
+        "options": ["128 bits", "64 bits", "256 bits", "32 bits"],
+        "answer": "128 bits"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "The per unit system simplifies:",
+        "options": ["Calculations in power systems", "Load factor measurement", "Torque computation", "Capacitance design"],
+        "answer": "Calculations in power systems"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "The function of bypass capacitor in amplifier is:",
+        "options": ["Increase AC gain", "Reduce DC offset", "Supply biasing", "Lower impedance"],
+        "answer": "Increase AC gain"
+      }
+    ]
+  },
+  {
+    "setId": 7,
+    "setName": "Set 7",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which Indian was awarded the 2023 Ramon Magsaysay Award?",
+        "options": ["Ravi Kannan", "Medha Patkar", "Arvind Kejriwal", "Kailash Satyarthi"],
+        "answer": "Ravi Kannan"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In a binary search tree, average case search time is:",
+        "options": ["O(log n)", "O(n)", "O(n log n)", "O(1)"],
+        "answer": "O(log n)"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which protocol secures HTTP?",
+        "options": ["TLS", "HTTPS", "ICMP", "FTP"],
+        "answer": "TLS"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In transformers, efficiency is maximum when:",
+        "options": ["Copper loss = Iron loss", "Copper loss = 0", "Iron loss = 0", "Load = Full load"],
+        "answer": "Copper loss = Iron loss"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "The main advantage of CMOS technology is:",
+        "options": ["Low static power dissipation", "High switching speed", "Complex fabrication", "High current drive"],
+        "answer": "Low static power dissipation"
+      }
+    ]
+  },
+  {
+    "setId": 8,
+    "setName": "Set 8",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "India’s first woman to win an Olympic medal?",
+        "options": ["Karnam Malleswari", "Mary Kom", "P. V. Sindhu", "Sakshi Malik"],
+        "answer": "Karnam Malleswari"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which sorting algorithm is stable?",
+        "options": ["Merge Sort", "Heap Sort", "Quick Sort", "Selection Sort"],
+        "answer": "Merge Sort"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "DNS translates:",
+        "options": ["Domain names to IP", "IP to MAC", "URLs to Data", "Hosts to Protocols"],
+        "answer": "Domain names to IP"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "The main reason for corona in transmission lines?",
+        "options": ["Ionization of air", "Eddy currents", "Hysteresis", "Mutual inductance"],
+        "answer": "Ionization of air"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In an op-amp, ideal CMRR is:",
+        "options": ["Infinite", "Zero", "Unity", "Finite"],
+        "answer": "Infinite"
+      }
+    ]
+  },
+  {
+    "setId": 9,
+    "setName": "Set 9",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which country introduced the world’s first digital currency backed by central bank?",
+        "options": ["Bahamas", "Sweden", "China", "Japan"],
+        "answer": "Bahamas"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "DFA and NFA are equivalent in terms of:",
+        "options": ["Language recognition", "Time efficiency", "State minimization", "Alphabet size"],
+        "answer": "Language recognition"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "FTP operates on which ports by default?",
+        "options": ["20, 21", "23, 25", "80, 443", "8080, 21"],
+        "answer": "20, 21"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Synchronous generator generates emf due to:",
+        "options": ["Relative motion of field and armature", "Mechanical vibrations", "Eddy currents", "Core saturation"],
+        "answer": "Relative motion of field and armature"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Schmitt trigger is used for:",
+        "options": ["Removing noise from signals", "Power amplification", "Current limiting", "Pulse shaping only"],
+        "answer": "Removing noise from signals"
+      }
+    ]
+  },
+  {
+    "setId": 10,
+    "setName": "Set 10",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The Chipko movement was started in which state?",
+        "options": ["Uttarakhand", "Bihar", "Assam", "Gujarat"],
+        "answer": "Uttarakhand"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which data structure is used in recursion?",
+        "options": ["Stack", "Queue", "Tree", "Array"],
+        "answer": "Stack"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which layer of OSI model is responsible for encryption?",
+        "options": ["Presentation", "Network", "Session", "Transport"],
+        "answer": "Presentation"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "A phasor diagram is mainly used in:",
+        "options": ["AC analysis", "DC circuits", "Switchgear", "Magnetostatics"],
+        "answer": "AC analysis"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Gunn diode operates on:",
+        "options": ["Negative resistance", "Avalanche breakdown", "PIN effect", "Photoconduction"],
+        "answer": "Negative resistance"
+      }
+    ]
+  },
+  {
+    "setId": 11,
+    "setName": "Set 11",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Who is known as the Missile Man of India?",
+        "options": ["A. P. J. Abdul Kalam", "Vikram Sarabhai", "Homi Bhabha", "Satish Dhawan"],
+        "answer": "A. P. J. Abdul Kalam"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Time complexity of Heap Sort is:",
+        "options": ["O(n log n)", "O(n^2)", "O(log n)", "O(n)"],
+        "answer": "O(n log n)"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which protocol is used for email retrieval?",
+        "options": ["IMAP", "SMTP", "FTP", "SNMP"],
+        "answer": "IMAP"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Ferranti effect occurs in:",
+        "options": ["Long transmission lines", "Transformers", "Induction motors", "DC generators"],
+        "answer": "Long transmission lines"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "The cutoff frequency of an RC low pass filter depends on:",
+        "options": ["R and C values", "Only R", "Only C", "Frequency of input"],
+        "answer": "R and C values"
+      }
+    ]
+  },
+  {
+    "setId": 12,
+    "setName": "Set 12",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "First Indian woman to go into space?",
+        "options": ["Kalpana Chawla", "Sunita Williams", "Tessy Thomas", "Indira Gandhi"],
+        "answer": "Kalpana Chawla"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which traversal of a binary tree results in sorted order for BST?",
+        "options": ["Inorder", "Preorder", "Postorder", "Level order"],
+        "answer": "Inorder"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which one is NOT a NoSQL database?",
+        "options": ["MongoDB", "Cassandra", "MySQL", "Redis"],
+        "answer": "MySQL"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Unit of reluctance is:",
+        "options": ["A⁻¹·Wb", "Henry", "Tesla", "Ohm"],
+        "answer": "A⁻¹·Wb"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "The ideal op-amp has input impedance:",
+        "options": ["Infinite", "Zero", "Finite", "Unity"],
+        "answer": "Infinite"
+      }
+    ]
+  },
+  {
+    "setId": 13,
+    "setName": "Set 13",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The Nobel Prize for Literature 2023 was awarded to?",
+        "options": ["Jon Fosse", "Annie Ernaux", "Kazuo Ishiguro", "Olga Tokarczuk"],
+        "answer": "Jon Fosse"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which is not a stable sorting algorithm?",
+        "options": ["Quick Sort", "Bubble Sort", "Insertion Sort", "Merge Sort"],
+        "answer": "Quick Sort"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which of the following is an example of IaaS?",
+        "options": ["Amazon EC2", "Google Docs", "Dropbox", "Salesforce"],
+        "answer": "Amazon EC2"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "The device that converts AC to DC is:",
+        "options": ["Rectifier", "Inverter", "Cycloconverter", "Chopper"],
+        "answer": "Rectifier"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In a Zener diode, breakdown occurs due to:",
+        "options": ["High reverse bias", "Forward bias", "Avalanche current only", "Thermal effect"],
+        "answer": "High reverse bias"
+      }
+    ]
+  },
+  {
+    "setId": 14,
+    "setName": "Set 14",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which river is known as Dakshina Ganga?",
+        "options": ["Godavari", "Krishna", "Cauvery", "Mahanadi"],
+        "answer": "Godavari"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which data structure is used in BFS traversal?",
+        "options": ["Queue", "Stack", "Tree", "Heap"],
+        "answer": "Queue"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which HTTP method is idempotent?",
+        "options": ["GET", "POST", "PATCH", "CONNECT"],
+        "answer": "GET"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In synchronous motors, hunting is minimized by:",
+        "options": ["Damper windings", "Slip rings", "Stator resistance", "Field excitation"],
+        "answer": "Damper windings"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which oscillator uses a quartz crystal?",
+        "options": ["Crystal oscillator", "Hartley oscillator", "RC oscillator", "Colpitts oscillator"],
+        "answer": "Crystal oscillator"
+      }
+    ]
+  },
+  {
+    "setId": 15,
+    "setName": "Set 15",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The headquarters of ISRO is located at:",
+        "options": ["Bengaluru", "Hyderabad", "Thiruvananthapuram", "Mumbai"],
+        "answer": "Bengaluru"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which algorithm is used in PageRank?",
+        "options": ["Markov Chain", "Dynamic Programming", "Divide & Conquer", "Greedy"],
+        "answer": "Markov Chain"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which of these is a symmetric key algorithm?",
+        "options": ["AES", "RSA", "ECC", "Diffie-Hellman"],
+        "answer": "AES"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Which machine works on the principle of electromagnetic induction?",
+        "options": ["Transformer", "DC motor", "Battery", "Rectifier"],
+        "answer": "Transformer"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which filter is used to remove 50 Hz noise from a signal?",
+        "options": ["Notch filter", "Low pass filter", "High pass filter", "Band pass filter"],
+        "answer": "Notch filter"
+      }
+    ]
+  },
+  {
+    "setId": 16,
+    "setName": "Set 16",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which Indian city is known as the ‘Manchester of India’?",
+        "options": ["Ahmedabad", "Surat", "Kanpur", "Mumbai"],
+        "answer": "Ahmedabad"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which algorithm is used for shortest path in graphs?",
+        "options": ["Dijkstra", "Kruskal", "Prim", "Bellman-Ford"],
+        "answer": "Dijkstra"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which of the following is a markup language?",
+        "options": ["HTML", "Python", "C++", "Java"],
+        "answer": "HTML"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Skin effect is prominent in:",
+        "options": ["AC at high frequency", "DC circuits", "Low voltage AC", "Transformers only"],
+        "answer": "AC at high frequency"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which device converts digital signals to analog?",
+        "options": ["DAC", "ADC", "Op-Amp", "Rectifier"],
+        "answer": "DAC"
+      }
+    ]
+  },
+  {
+    "setId": 17,
+    "setName": "Set 17",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Who was the first woman Prime Minister of India?",
+        "options": ["Indira Gandhi", "Sarojini Naidu", "Pratibha Patil", "Sushma Swaraj"],
+        "answer": "Indira Gandhi"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In databases, ACID stands for:",
+        "options": ["Atomicity, Consistency, Isolation, Durability", "Accuracy, Control, Integration, Data", "Access, Commit, Index, Data", "Analysis, Clustering, Indexing, Decision"],
+        "answer": "Atomicity, Consistency, Isolation, Durability"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "IPv4 uses how many bits for addressing?",
+        "options": ["32", "64", "128", "256"],
+        "answer": "32"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Induction motors are also called:",
+        "options": ["Asynchronous motors", "Synchronous motors", "DC motors", "Stepper motors"],
+        "answer": "Asynchronous motors"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "MOSFET is a:",
+        "options": ["Voltage controlled device", "Current controlled device", "Hybrid device", "Power device only"],
+        "answer": "Voltage controlled device"
+      }
+    ]
+  },
+  {
+    "setId": 18,
+    "setName": "Set 18",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which Indian scientist discovered the Raman Effect?",
+        "options": ["C. V. Raman", "J. C. Bose", "Homi Bhabha", "Satyendra Nath Bose"],
+        "answer": "C. V. Raman"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Hashing is used for:",
+        "options": ["Searching", "Sorting", "Indexing", "Encryption"],
+        "answer": "Searching"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which protocol is used for secure file transfer?",
+        "options": ["SFTP", "HTTP", "SNMP", "SMTP"],
+        "answer": "SFTP"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Maximum power transfer theorem states:",
+        "options": ["Load resistance = Source resistance", "Load power = Source power", "Impedance = Zero", "Voltage = Current"],
+        "answer": "Load resistance = Source resistance"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "LED works on the principle of:",
+        "options": ["Electroluminescence", "Thermionic emission", "Photovoltaic effect", "Hall effect"],
+        "answer": "Electroluminescence"
+      }
+    ]
+  },
+  {
+    "setId": 19,
+    "setName": "Set 19",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which is the largest planet in the solar system?",
+        "options": ["Jupiter", "Saturn", "Earth", "Neptune"],
+        "answer": "Jupiter"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In object-oriented programming, encapsulation refers to:",
+        "options": ["Data hiding", "Inheritance", "Polymorphism", "Abstraction"],
+        "answer": "Data hiding"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which company developed the Windows operating system?",
+        "options": ["Microsoft", "Apple", "IBM", "Intel"],
+        "answer": "Microsoft"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Kirchhoff’s current law is based on:",
+        "options": ["Conservation of charge", "Conservation of energy", "Conservation of mass", "Conservation of momentum"],
+        "answer": "Conservation of charge"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which semiconductor has the highest electron mobility?",
+        "options": ["GaAs", "Si", "Ge", "SiC"],
+        "answer": "GaAs"
+      }
+    ]
+  },
+  {
+    "setId": 20,
+    "setName": "Set 20",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which Indian state has the longest coastline?",
+        "options": ["Gujarat", "Andhra Pradesh", "Tamil Nadu", "Odisha"],
+        "answer": "Gujarat"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which of these is a non-linear data structure?",
+        "options": ["Tree", "Stack", "Queue", "Array"],
+        "answer": "Tree"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "The full form of URL is:",
+        "options": ["Uniform Resource Locator", "Unified Resource Link", "Universal Routing Locator", "Uniform Routing Link"],
+        "answer": "Uniform Resource Locator"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Which law gives the relation between magnetic field and current?",
+        "options": ["Ampere’s law", "Lenz’s law", "Faraday’s law", "Coulomb’s law"],
+        "answer": "Ampere’s law"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which transistor configuration has the highest input impedance?",
+        "options": ["Common collector", "Common emitter", "Common base", "Darlington pair"],
+        "answer": "Common collector"
+      }
+    ]
+  },
+  {
+    "setId": 21,
+    "setName": "Set 21",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which Indian monument is also called the ‘Symbol of Love’?",
+        "options": ["Taj Mahal", "Qutub Minar", "Charminar", "Red Fort"],
+        "answer": "Taj Mahal"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which algorithm is used for minimum spanning tree?",
+        "options": ["Kruskal’s", "Dijkstra’s", "Floyd-Warshall", "Bellman-Ford"],
+        "answer": "Kruskal’s"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which of these is NOT an operating system?",
+        "options": ["Linux", "Windows", "Oracle", "macOS"],
+        "answer": "Oracle"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "A synchronous condenser is used for:",
+        "options": ["Power factor correction", "Voltage regulation", "Frequency control", "Load sharing"],
+        "answer": "Power factor correction"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which device is used as a switch in digital circuits?",
+        "options": ["Transistor", "Resistor", "Diode", "Capacitor"],
+        "answer": "Transistor"
+      }
+    ]
+  },
+  {
+    "setId": 22,
+    "setName": "Set 22",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The currency of Japan is:",
+        "options": ["Yen", "Won", "Dollar", "Peso"],
+        "answer": "Yen"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which searching algorithm is used in sorted arrays?",
+        "options": ["Binary Search", "Linear Search", "Hashing", "DFS"],
+        "answer": "Binary Search"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In networking, SSL is used for:",
+        "options": ["Secure communication", "Data compression", "Error detection", "Routing"],
+        "answer": "Secure communication"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Power factor of a purely resistive circuit is:",
+        "options": ["1", "0", "0.5", "Leading"],
+        "answer": "1"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which type of semiconductor is formed by adding pentavalent impurities?",
+        "options": ["N-type", "P-type", "Intrinsic", "Degenerate"],
+        "answer": "N-type"
+      }
+    ]
+  },
+  {
+    "setId": 23,
+    "setName": "Set 23",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Who wrote the Indian National Anthem?",
+        "options": ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Mahatma Gandhi", "Subhash Chandra Bose"],
+        "answer": "Rabindranath Tagore"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In Big-O notation, O(1) represents:",
+        "options": ["Constant time", "Logarithmic time", "Linear time", "Quadratic time"],
+        "answer": "Constant time"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which of these is NOT a programming language?",
+        "options": ["Python", "Java", "Oracle", "C++"],
+        "answer": "Oracle"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Which machine is used in household fans?",
+        "options": ["Single-phase induction motor", "DC motor", "Synchronous motor", "Step motor"],
+        "answer": "Single-phase induction motor"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which amplifier configuration provides 180° phase shift?",
+        "options": ["Common emitter", "Common collector", "Common base", "Darlington"],
+        "answer": "Common emitter"
+      }
+    ]
+  },
+  {
+    "setId": 24,
+    "setName": "Set 24",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which Indian state is called the ‘Land of Five Rivers’?",
+        "options": ["Punjab", "Haryana", "Rajasthan", "Uttar Pradesh"],
+        "answer": "Punjab"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which is the best case time complexity of Quick Sort?",
+        "options": ["O(n log n)", "O(n^2)", "O(n)", "O(log n)"],
+        "answer": "O(n log n)"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which company developed the Android OS?",
+        "options": ["Google", "Microsoft", "Apple", "Samsung"],
+        "answer": "Google"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In power systems, load shedding is done to:",
+        "options": ["Prevent blackout", "Reduce tariff", "Increase power factor", "Improve stability"],
+        "answer": "Prevent blackout"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which diode is used for high frequency oscillators?",
+        "options": ["Tunnel diode", "Zener diode", "Schottky diode", "PIN diode"],
+        "answer": "Tunnel diode"
+      }
+    ]
+  },
+  {
+    "setId": 25,
+    "setName": "Set 25",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which country is known as the ‘Land of Rising Sun’?",
+        "options": ["Japan", "China", "Korea", "Thailand"],
+        "answer": "Japan"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which algorithm uses divide and conquer?",
+        "options": ["Merge Sort", "Prim’s", "Dijkstra’s", "Bellman-Ford"],
+        "answer": "Merge Sort"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which port does HTTP use by default?",
+        "options": ["80", "21", "25", "110"],
+        "answer": "80"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Which instrument is used to measure electric current?",
+        "options": ["Ammeter", "Voltmeter", "Ohmmeter", "Wattmeter"],
+        "answer": "Ammeter"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which material is commonly used as a semiconductor?",
+        "options": ["Silicon", "Copper", "Aluminium", "Iron"],
+        "answer": "Silicon"
+      }
+    ]
+  },
+  {
+    "setId": 26,
+    "setName": "Set 26",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The capital of Australia is:",
+        "options": ["Canberra", "Sydney", "Melbourne", "Brisbane"],
+        "answer": "Canberra"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which data structure works on FIFO principle?",
+        "options": ["Queue", "Stack", "Tree", "Graph"],
+        "answer": "Queue"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which protocol is used for sending emails?",
+        "options": ["SMTP", "HTTP", "FTP", "SNMP"],
+        "answer": "SMTP"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Which law is used in the analysis of magnetic circuits?",
+        "options": ["Ampere’s law", "Faraday’s law", "Lenz’s law", "Ohm’s law"],
+        "answer": "Ampere’s law"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which filter passes high frequencies and blocks low frequencies?",
+        "options": ["High-pass filter", "Low-pass filter", "Band-pass filter", "Notch filter"],
+        "answer": "High-pass filter"
+      }
+    ]
+  },
+  {
+    "setId": 27,
+    "setName": "Set 27",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Who is known as the ‘Missile Man of India’?",
+        "options": ["Dr. A.P.J. Abdul Kalam", "Vikram Sarabhai", "Homi Bhabha", "Satish Dhawan"],
+        "answer": "Dr. A.P.J. Abdul Kalam"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which algorithm is used to find the shortest path?",
+        "options": ["Dijkstra’s", "Prim’s", "Kruskal’s", "Ford-Fulkerson"],
+        "answer": "Dijkstra’s"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which of these is an example of cloud storage?",
+        "options": ["Google Drive", "Microsoft Word", "Adobe Photoshop", "Notepad"],
+        "answer": "Google Drive"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Which device converts AC to DC?",
+        "options": ["Rectifier", "Inverter", "Transformer", "Inductor"],
+        "answer": "Rectifier"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which semiconductor device emits light when forward biased?",
+        "options": ["LED", "Photodiode", "SCR", "MOSFET"],
+        "answer": "LED"
+      }
+    ]
+  },
+  {
+    "setId": 28,
+    "setName": "Set 28",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which Indian festival is known as the ‘Festival of Lights’?",
+        "options": ["Diwali", "Holi", "Eid", "Christmas"],
+        "answer": "Diwali"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which sorting algorithm has O(n^2) time complexity in worst case?",
+        "options": ["Bubble Sort", "Merge Sort", "Heap Sort", "Quick Sort"],
+        "answer": "Bubble Sort"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which company created the Windows operating system?",
+        "options": ["Microsoft", "Google", "Apple", "IBM"],
+        "answer": "Microsoft"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Which type of current is used in household supply?",
+        "options": ["AC", "DC", "Pulsating DC", "Constant current"],
+        "answer": "AC"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which component stores electric charge?",
+        "options": ["Capacitor", "Resistor", "Diode", "Inductor"],
+        "answer": "Capacitor"
+      }
+    ]
+  },
+  {
+    "setId": 29,
+    "setName": "Set 29",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Who is the author of ‘Discovery of India’?",
+        "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Rabindranath Tagore", "S. Radhakrishnan"],
+        "answer": "Jawaharlal Nehru"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which data structure uses LIFO principle?",
+        "options": ["Stack", "Queue", "Heap", "Tree"],
+        "answer": "Stack"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which of these is a relational database?",
+        "options": ["MySQL", "MongoDB", "Redis", "Cassandra"],
+        "answer": "MySQL"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Which material is commonly used in electrical wiring?",
+        "options": ["Copper", "Aluminium", "Silver", "Iron"],
+        "answer": "Copper"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which logic gate has output 1 only if both inputs are 1?",
+        "options": ["AND", "OR", "XOR", "NAND"],
+        "answer": "AND"
+      }
+    ]
+  },
+  {
+    "setId": 30,
+    "setName": "Set 30",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which planet is called the ‘Red Planet’?",
+        "options": ["Mars", "Venus", "Jupiter", "Saturn"],
+        "answer": "Mars"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which notation is used to measure algorithm complexity?",
+        "options": ["Big-O", "Sigma", "Delta", "Theta"],
+        "answer": "Big-O"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which company developed Java programming language?",
+        "options": ["Sun Microsystems", "Microsoft", "Google", "Oracle"],
+        "answer": "Sun Microsystems"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "The unit of electrical resistance is:",
+        "options": ["Ohm", "Watt", "Ampere", "Volt"],
+        "answer": "Ohm"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which device is used to amplify weak signals?",
+        "options": ["Amplifier", "Rectifier", "Oscillator", "Filter"],
+        "answer": "Amplifier"
+      }
+    ]
+  },
+  {
+    "setId": 31,
+    "setName": "Set 31",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which is the only country that is entirely surrounded by just one other country?",
+        "options": ["San Marino", "Lesotho", "Vatican City", "Monaco"],
+        "answer": "Lesotho"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Suppose you run Dijkstra’s algorithm on a graph with nonnegative weights, and you relax edges in arbitrary order rather than via a priority queue. Which property is lost?",
+        "options": ["Optimality", "Termination", "Acyclicity", "Completeness"],
+        "answer": "Optimality"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In TCP, the “SACK” option helps by enabling:",
+        "options": ["selective acknowledgment of received segments", "security association keying", "sequence number anonymization", "simultaneous acknowledgment"],
+        "answer": "selective acknowledgment of received segments"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In a three-phase balanced load, the line current is greatest when the load is:",
+        "options": ["star connected with neutral open", "delta connected", "delta connected with one phase open", "star connected with neutral earthed"],
+        "answer": "delta connected"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In an ARM Cortex-M microcontroller, which of these mechanisms is used to handle multiple interrupt priorities?",
+        "options": ["Interrupt coalescing", "Nested Vectored Interrupt Controller", "Static IRQ multiplexer", "Interrupt deferral queue"],
+        "answer": "Nested Vectored Interrupt Controller"
+      }
+    ]
+  },
+  {
+    "setId": 32,
+    "setName": "Set 32",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "What is the longest river entirely within one country?",
+        "options": ["Amazon", "Yellow River", "Yenisei", "Mississippi"],
+        "answer": "Yellow River"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which class of languages is recognized by push-down automata with two stacks?",
+        "options": ["NP", "Context-sensitive", "Recursively enumerable", "Context-free"],
+        "answer": "Recursively enumerable"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which cryptographic scheme provides forward secrecy by ensuring that compromise of long-term keys does not compromise past session keys?",
+        "options": ["RSA signature", "Diffie-Hellman with ephemeral keys", "AES in ECB mode", "MD5 hashing"],
+        "answer": "Diffie-Hellman with ephemeral keys"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "A synchronous motor, when loaded just slightly above its pull-out torque, will:",
+        "options": ["accelerate", "stall abruptly", "reverse direction", "reduce its power factor to unity"],
+        "answer": "stall abruptly"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In an SPI bus, if multiple slave devices share lines, the common method to avoid bus conflicts is:",
+        "options": ["tristate the master", "daisy chaining SS lines", "ensure only one chip select is asserted at a time", "encode it via Manchester code"],
+        "answer": "ensure only one chip select is asserted at a time"
+      }
+    ]
+  },
+  {
+    "setId": 33,
+    "setName": "Set 33",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which is the deepest known part of the world’s oceans?",
+        "options": ["Mariana Trench", "Java Trench", "Puerto Rico Trench", "Tonga Trench"],
+        "answer": "Mariana Trench"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In a persistent balanced binary search tree, which technique is commonly used to avoid rewriting the entire structure?",
+        "options": ["Path copying", "Lazy deletion", "Hash chaining", "Node coloring"],
+        "answer": "Path copying"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In distributed databases, the CAP theorem states you cannot simultaneously guarantee:",
+        "options": ["Consistency, Availability, Partition tolerance", "Concurrency, Atomicity, Performance", "Completeness, ACID, Partition tolerance", "Coherence, Availability, Persistence"],
+        "answer": "Consistency, Availability, Partition tolerance"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In a transmission line terminated in its characteristic impedance, the standing wave ratio (SWR) is:",
+        "options": ["zero", "one", "infinite", "undefined"],
+        "answer": "one"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which low-power mode in microcontrollers generally shuts off all clocks but retains RAM and minimal context?",
+        "options": ["Sleep mode", "Deep sleep / standby", "Run mode", "Idle mode"],
+        "answer": "Deep sleep / standby"
+      }
+    ]
+  },
+  {
+    "setId": 34,
+    "setName": "Set 34",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which is the only continent without a desert?",
+        "options": ["Europe", "Antarctica", "Australia", "South America"],
+        "answer": "Europe"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which scheduling policy can lead to starvation of lower priority tasks?",
+        "options": ["Round robin", "First come first served", "Priority scheduling without aging", "Shortest job next"],
+        "answer": "Priority scheduling without aging"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In IPv6, what is the purpose of the “neighbor discovery protocol” (NDP)?",
+        "options": ["Replace ARP, handle address resolution and router discovery", "Encrypt neighbor communications", "Compress header options dynamically", "Synchronize neighbor clocks"],
+        "answer": "Replace ARP, handle address resolution and router discovery"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "If you increase the frequency of an AC inductor by 10×, what happens to its reactance?",
+        "options": ["10× increase", "10× decrease", "100× increase", "Remains same"],
+        "answer": "10× increase"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In PWM control, to reduce ripple in the output RC filter, one should:",
+        "options": ["lower switching frequency", "increase load impedance", "use a larger filter capacitance", "reduce duty cycle"],
+        "answer": "use a larger filter capacitance"
+      }
+    ]
+  },
+  {
+    "setId": 35,
+    "setName": "Set 35",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which planet in our solar system has the largest axial tilt?",
+        "options": ["Uranus", "Earth", "Mars", "Saturn"],
+        "answer": "Uranus"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In elliptic curve cryptography, the discrete logarithm problem is considered hard because:",
+        "options": ["Elliptic curves are commutative", "No subexponential algorithm is known", "Hashing is used implicitly", "Points cannot be added"],
+        "answer": "No subexponential algorithm is known"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "The Bitonic sort algorithm belongs to which category?",
+        "options": ["Comparison sort", "Counting sort", "Radix sort", "Bucket sort"],
+        "answer": "Comparison sort"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In synchronous generator operation, “droop” control means that:",
+        "options": ["frequency falls when load increases", "voltage falls when load increases", "the governor always overshoots", "power factor becomes fixed"],
+        "answer": "frequency falls when load increases"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In I²C communication, when the master releases the SDA line, how is the line pulled to high?",
+        "options": ["Via internal pull-down resistor", "Via open-collector and external pull-up resistor", "Via active high drive from master", "Via capacitive coupling"],
+        "answer": "Via open-collector and external pull-up resistor"
+      }
+    ]
+  },
+  {
+    "setId": 36,
+    "setName": "Set 36",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "What is the chemical element with the highest atomic number that occurs naturally?",
+        "options": ["Uranium", "Californium", "Neptunium", "Plutonium"],
+        "answer": "Uranium"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which of the following is not necessarily true of a language in P?",
+        "options": ["It is decidable", "It is recognizable", "Its complement is also in P", "It is context-free"],
+        "answer": "It is context-free"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In virtual memory systems, the TLB is primarily used for:",
+        "options": ["caching physical pages", "mapping virtual to physical addresses", "garbage collection", "I/O buffering"],
+        "answer": "mapping virtual to physical addresses"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "The power factor of a pure inductor under AC is:",
+        "options": ["1", "0", "0.5", "–1"],
+        "answer": "0"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "LoRaWAN primarily uses which modulation scheme?",
+        "options": ["Frequency-modulated (FM)", "Phase-shift keying (PSK)", "Chirp spread spectrum (CSS)", "Amplitude modulation (AM)"],
+        "answer": "Chirp spread spectrum (CSS)"
+      }
+    ]
+  },
+  {
+    "setId": 37,
+    "setName": "Set 37",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which Nobel Prize is awarded on December 10 each year?",
+        "options": ["Peace", "Literature", "Physics", "Economics"],
+        "answer": "Physics"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In support vector machines (SVM), the “kernel trick” allows one to:",
+        "options": ["avoid overfitting by pruning", "compute dot products in high dimension implicitly", "convert SVM into decision trees", "normalize input features"],
+        "answer": "compute dot products in high dimension implicitly"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "Which attack involves intercepting data and then retransmitting it later?",
+        "options": ["Phishing", "Replay attack", "DoS", "Trojan"],
+        "answer": "Replay attack"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In a capacitor connected in AC, the current leads the voltage by:",
+        "options": ["90°", "45°", "30°", "180°"],
+        "answer": "90°"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In a microcontroller ADC, the successive approximation method uses:",
+        "options": ["binary search on analog voltage", "random sampling", "Fourier transform", "hysteresis thresholding"],
+        "answer": "binary search on analog voltage"
+      }
+    ]
+  },
+  {
+    "setId": 38,
+    "setName": "Set 38",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which structure is known as the largest living structure on Earth?",
+        "options": ["Great Barrier Reef", "Sequoia trees", "Amazon rainforest", "Sahara desert"],
+        "answer": "Great Barrier Reef"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In a DAG, the algorithm to find the longest path runs in:",
+        "options": ["NP-complete time", "linear time (topological + relaxation)", "exponential time", "logarithmic time"],
+        "answer": "linear time (topological + relaxation)"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In Paxos consensus algorithm, what is a “quorum”?",
+        "options": ["A set of processes large enough to guarantee majority", "A randomly chosen node", "A sequence number threshold", "A cryptographic witness"],
+        "answer": "A set of processes large enough to guarantee majority"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "The Ferranti effect refers to:",
+        "options": ["overvoltage at the receiving end of a long line under light load", "resonance in an LC circuit", "corona discharge at high voltage", "hysteresis loss in transformers"],
+        "answer": "overvoltage at the receiving end of a long line under light load"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In an nRF52 BLE chip, the SoftDevice is:",
+        "options": ["BLE radio hardware", "proprietary real-time OS / BLE stack", "analog front-end filter", "encryption module"],
+        "answer": "proprietary real-time OS / BLE stack"
+      }
+    ]
+  },
+  {
+    "setId": 39,
+    "setName": "Set 39",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which ancient wonder of the world is located in present-day Iraq?",
+        "options": ["Hanging Gardens of Babylon", "Statue of Zeus", "Colossus of Rhodes", "Lighthouse of Alexandria"],
+        "answer": "Hanging Gardens of Babylon"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Amdahl’s law describes the limit on speedup when:",
+        "options": ["all parts are parallelizable", "some fraction remains serial", "the I/O is optimized", "memory is infinite"],
+        "answer": "some fraction remains serial"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "A “phi (φ) function” in SSA form is used to:",
+        "options": ["perform arithmetic phi", "merge variable versions from different control-flow paths", "allocate registers", "encode loops"],
+        "answer": "merge variable versions from different control-flow paths"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "The core loss in a transformer is composed of:",
+        "options": ["copper loss + dielectric loss", "hysteresis + eddy current losses", "skin effect + flux leakage", "corona + dielectric loss"],
+        "answer": "hysteresis + eddy current losses"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "The main advantage of DMA in embedded systems is:",
+        "options": ["Eliminates memory errors", "Allows peripherals to access memory independently of CPU", "Increases clock speed", "Reduces transistor count"],
+        "answer": "Allows peripherals to access memory independently of CPU"
+      }
+    ]
+  },
+  {
+    "setId": 40,
+    "setName": "Set 40",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Who was the first person to travel into space?",
+        "options": ["Neil Armstrong", "Yuri Gagarin", "Alan Shepard", "Valentina Tereshkova"],
+        "answer": "Yuri Gagarin"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In a Fibonacci heap, the amortized cost of decrease-key is:",
+        "options": ["O(1)", "O(log n)", "O(n)", "O(α(n))"],
+        "answer": "O(1)"
+      },
+      {
+        "id": "Q3",
+        "domain": "CS",
+        "question": "In RSA, the public and private exponents satisfy:",
+        "options": ["e ⋅ d ≡ 1 (mod n)", "e + d = φ(n)", "e ⋅ d ≡ 1 (mod φ(n))", "e^d ≡ n (mod φ(n))"],
+        "answer": "e ⋅ d ≡ 1 (mod φ(n))"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "Skin effect causes:",
+        "options": [
+          "current to concentrate near surface of conductor at high frequencies",
+          "reduction of capacitance",
+          "linear increase in resistance with frequency",
+          "inductance cancellation"
+        ],
+        "answer": "current to concentrate near surface of conductor at high frequencies"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In a charge/discharge RC circuit, the time constant τ = R * C defines the time after which the voltage reaches approximately:",
+        "options": ["50%", "63.2%", "36.8%", "25%"],
+        "answer": "63.2%"
+      }
+    ]
+  },
+  {
+    "setId": 41,
+    "setName": "Set 41",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The largest moon of Saturn is named:",
+        "options": ["Titan", "Europa", "Ganymede", "Callisto"],
+        "answer": "Titan"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In the Edmonds–Karp algorithm for max flow, the complexity is:",
+        "options": ["O(V² E)", "O(E log V)", "O(V E²)", "O(E²)"],
+        "answer": "O(V E²)"
+      },
+      {
+        "id": "Q3",
+        "domain": "CS",
+        "question": "Thrashing in virtual memory occurs when:",
+        "options": [
+          "page faults are negligible",
+          "paging activity greatly increases, reducing performance",
+          "memory is continuous",
+          "CPU is idle"
+        ],
+        "answer": "paging activity greatly increases, reducing performance"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In a synchronous condenser, its main use is to:",
+        "options": [
+          "generate real power",
+          "absorb reactive power",
+          "supply reactive power / improve power factor",
+          "convert DC to AC"
+        ],
+        "answer": "supply reactive power / improve power factor"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In an SPI transmission, if master wants to receive and send simultaneously, it uses:",
+        "options": ["half-duplex mode", "full-duplex mode", "simplex mode", "multiplexer mode"],
+        "answer": "full-duplex mode"
+      }
+    ]
+  },
+  {
+    "setId": 42,
+    "setName": "Set 42",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which language has the largest number of native speakers in the world?",
+        "options": ["English", "Mandarin Chinese", "Spanish", "Hindi"],
+        "answer": "Mandarin Chinese"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "The Myhill–Nerode theorem is used to:",
+        "options": [
+          "show closure under union",
+          "characterize regular languages by equivalence relation",
+          "generate context-free grammars",
+          "prove existence of TMs"
+        ],
+        "answer": "characterize regular languages by equivalence relation"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In BGP, a route is selected based on the highest:",
+        "options": ["AS-path length", "local preference", "TTL value", "packet size"],
+        "answer": "local preference"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In a three-phase to single-phase transformer arrangement, which connection is typical?",
+        "options": ["Delta–Delta", "Delta–Wye", "Wye–Delta", "Delta–Open"],
+        "answer": "Delta–Wye"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which sensor is commonly used to measure acceleration in embedded IoT devices?",
+        "options": ["Gyroscope", "Barometer", "Accelerometer", "Hall sensor"],
+        "answer": "Accelerometer"
+      }
+    ]
+  },
+  {
+    "setId": 43,
+    "setName": "Set 43",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which composer wrote the opera “The Magic Flute”?",
+        "options": ["Beethoven", "Mozart", "Wagner", "Handel"],
+        "answer": "Mozart"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "The CRCW PRAM model allows:",
+        "options": [
+          "only one write at a time",
+          "concurrent writes with arbitrary resolution",
+          "concurrent reads, no writes",
+          "concurrent writes resolved by common value"
+        ],
+        "answer": "concurrent writes resolved by common value"
+      },
+      {
+        "id": "Q3",
+        "domain": "CS",
+        "question": "When two processes lock two resources each but in opposite order and wait, this is:",
+        "options": ["livelock", "starvation", "deadlock", "preemption"],
+        "answer": "deadlock"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In hysteresis of magnetic material, the area inside the loop represents:",
+        "options": ["capacitive loss", "iron loss (energy dissipated)", "inductive gain", "dielectric loss"],
+        "answer": "iron loss (energy dissipated)"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In a microcontroller’s watchdog timer, if software becomes stuck, the watchdog will:",
+        "options": ["generate interrupts continuously", "stall the CPU indefinitely", "reset the system", "disable I/O"],
+        "answer": "reset the system"
+      }
+    ]
+  },
+  {
+    "setId": 44,
+    "setName": "Set 44",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which city hosted both the Summer and Winter Olympic Games (different years)?",
+        "options": ["Tokyo", "Munich", "Beijing", "London"],
+        "answer": "Beijing"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "Which sorting algorithm is guaranteed O(n log n) worst-case?",
+        "options": ["Quicksort", "Merge sort", "Bubble sort", "Insertion sort"],
+        "answer": "Merge sort"
+      },
+      {
+        "id": "Q3",
+        "domain": "CS",
+        "question": "A Byzantine fault refers to:",
+        "options": ["crash fault only", "arbitrary / malicious behavior by nodes", "network partition", "high latency"],
+        "answer": "arbitrary / malicious behavior by nodes"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electronics",
+        "question": "In a stepper motor, microstepping is used to:",
+        "options": ["increase torque", "smooth motion and finer resolution", "reduce current", "invert polarity"],
+        "answer": "smooth motion and finer resolution"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "Which low-power wireless protocol is intended for very short data packets and infrequent transmissions?",
+        "options": ["Wi-Fi", "Zigbee", "BLE (Bluetooth Low Energy)", "Ethernet"],
+        "answer": "BLE (Bluetooth Low Energy)"
+      }
+    ]
+  },
+  {
+    "setId": 45,
+    "setName": "Set 45",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which painter is famous for “The Persistence of Memory”?",
+        "options": ["Picasso", "Dali", "Van Gogh", "Monet"],
+        "answer": "Dali"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In Huffman coding, the resulting code is:",
+        "options": ["fixed-length", "canonical prefix code", "unary coding", "arithmetic coding"],
+        "answer": "canonical prefix code"
+      },
+      {
+        "id": "Q3",
+        "domain": "Electrical",
+        "question": "A PID controller uses which components?",
+        "options": [
+          "Proportional, Inductive, Derivative",
+          "Proportional, Integral, Derivative",
+          "Primary, Interpolative, Dynamic",
+          "Predictive, Integrative, Differential"
+        ],
+        "answer": "Proportional, Integral, Derivative"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In an RLC series circuit at resonance, the impedance is:",
+        "options": ["minimum and equal to R", "maximum", "purely inductive", "infinite"],
+        "answer": "minimum and equal to R"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "I²S interface is typically used for:",
+        "options": ["analog sensor signals", "audio data (digital)", "power management", "GPIO control"],
+        "answer": "audio data (digital)"
+      }
+    ]
+  },
+  {
+    "setId": 46,
+    "setName": "Set 46",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which country has the world’s oldest continuously operating university?",
+        "options": ["Italy", "Morocco", "India", "France"],
+        "answer": "Morocco"
+      },
+      {
+        "id": "Q2",
+        "domain": "Electrical",
+        "question": "In control systems, a system with characteristic equation s³ + 2s² + 2s + 1 = 0 has how many poles in the right half-plane?",
+        "options": ["0", "1", "2", "3"],
+        "answer": "0"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In a blockchain network, the consensus algorithm “Practical Byzantine Fault Tolerance (PBFT)” guarantees safety if:",
+        "options": ["less than 1/3 nodes are faulty", "less than 1/2 nodes are faulty", "less than 1/4 nodes are faulty", "all nodes are honest"],
+        "answer": "less than 1/3 nodes are faulty"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "For an RLC parallel circuit at resonance, the admittance is:",
+        "options": ["minimum", "maximum", "zero", "infinite"],
+        "answer": "minimum"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In ARM Cortex-M microcontrollers, which mechanism allows low-power sleep with fast wake-up?",
+        "options": ["Event-driven wake", "WFI/WFE instructions", "Software polling", "Hardware loopback"],
+        "answer": "WFI/WFE instructions"
+      }
+    ]
+  },
+  {
+    "setId": 47,
+    "setName": "Set 47",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which city is known as the “City of Seven Hills”?",
+        "options": ["Lisbon", "Rome", "Istanbul", "Edinburgh"],
+        "answer": "Rome"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "A CPU executes instructions in a pipeline of 5 stages. The maximum speedup due to pipelining in presence of 2 pipeline hazards is:",
+        "options": ["5/3", "5/2", "2", "1.5"],
+        "answer": "5/3"
+      },
+      {
+        "id": "Q3",
+        "domain": "Electronics",
+        "question": "Which digital modulation scheme is most resilient to Rayleigh fading in wireless channels?",
+        "options": ["QPSK", "BPSK", "16-QAM", "FSK"],
+        "answer": "QPSK"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electronics",
+        "question": "In an ideal op-amp integrator, applying a constant input voltage produces:",
+        "options": ["constant output", "linearly increasing output", "exponentially decaying output", "sinusoidal output"],
+        "answer": "linearly increasing output"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electrical",
+        "question": "For a synchronous generator, the steady-state stability limit is determined by:",
+        "options": ["Armature resistance", "Reactance and power angle", "Load voltage", "Field current"],
+        "answer": "Reactance and power angle"
+      }
+    ]
+  },
+  {
+    "setId": 48,
+    "setName": "Set 48",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The “Rosetta Stone” was discovered in which country?",
+        "options": ["Egypt", "Greece", "Turkey", "Syria"],
+        "answer": "Egypt"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In quicksort, the worst-case occurs when:",
+        "options": ["pivot is median", "pivot is first/last element", "array is already sorted", "pivot is random"],
+        "answer": "pivot is first/last element"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In IPv6, the extension header that allows fragmentation is:",
+        "options": ["Hop-by-Hop", "Routing", "Fragment", "Destination"],
+        "answer": "Fragment"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In a transformer with 1000 turns primary and 100 turns secondary, if primary voltage is 230 V, the secondary voltage is:",
+        "options": ["23 V", "2.3 V", "46 V", "115 V"],
+        "answer": "23 V"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In microcontrollers, the main advantage of DMA over CPU-driven data transfer is:",
+        "options": ["reduces memory size", "reduces CPU load", "increases program speed", "allows faster interrupts"],
+        "answer": "reduces CPU load"
+      }
+    ]
+  },
+  {
+    "setId": 49,
+    "setName": "Set 49",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which metal is liquid at room temperature?",
+        "options": ["Lead", "Mercury", "Gallium", "Tin"],
+        "answer": "Mercury"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In computer architecture, a superscalar processor achieves speedup by:",
+        "options": ["increasing clock frequency", "executing multiple instructions per cycle", "using branch prediction", "cache prefetching"],
+        "answer": "executing multiple instructions per cycle"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In public-key cryptography, ElGamal encryption relies on:",
+        "options": ["Discrete logarithm problem", "Integer factorization", "Modular inversion", "Matrix multiplication"],
+        "answer": "Discrete logarithm problem"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "The resonant frequency of a series RLC circuit is given by:",
+        "options": ["1 / (2π√(LC))", "√(LC)", "2π√(LC)", "L/C"],
+        "answer": "1 / (2π√(LC))"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In PWM control, increasing the switching frequency affects the output ripple by:",
+        "options": ["increasing ripple", "decreasing ripple", "no change", "inverts ripple"],
+        "answer": "decreasing ripple"
+      }
+    ]
+  },
+  {
+    "setId": 50,
+    "setName": "Set 50",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Who was the first woman to win a Nobel Prize?",
+        "options": ["Marie Curie", "Rosalind Franklin", "Ada Lovelace", "Dorothy Hodgkin"],
+        "answer": "Marie Curie"
+      },
+      {
+        "id": "Q2",
+        "domain": "Electronics",
+        "question": "In an ideal op-amp differentiator, applying a ramp input results in:",
+        "options": ["zero output", "constant output", "ramp output", "exponential output"],
+        "answer": "constant output"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In a RAID system, RAID 6 differs from RAID 5 by:",
+        "options": ["striped only", "dual parity", "mirroring", "distributed caching"],
+        "answer": "dual parity"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electronics",
+        "question": "In digital logic, a JK flip-flop in toggle mode changes state when:",
+        "options": ["J=K=0", "J=K=1", "J=1, K=0", "J=0, K=1"],
+        "answer": "J=K=1"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electrical",
+        "question": "The Ziegler–Nichols method is used to tune:",
+        "options": ["digital filters", "PID controllers", "oscilloscopes", "synchronous motors"],
+        "answer": "PID controllers"
+      }
+    ]
+  },
+  {
+    "setId": 51,
+    "setName": "Set 51",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The “Terracotta Army” was built during the reign of which emperor?",
+        "options": ["Qin Shi Huang", "Kangxi", "Ashoka", "Akbar"],
+        "answer": "Qin Shi Huang"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In microprocessors, an instruction pipeline suffers a “structural hazard” when:",
+        "options": ["multiple instructions compete for the same hardware", "branch predictions fail", "cache misses occur", "registers overflow"],
+        "answer": "multiple instructions compete for the same hardware"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In cryptography, AES uses which type of structure internally?",
+        "options": ["Feistel", "Substitution-permutation network", "Stream cipher", "Hash chaining"],
+        "answer": "Substitution-permutation network"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In a 3-phase induction motor, if rotor resistance increases, the slip at maximum torque:",
+        "options": ["decreases", "increases", "remains constant", "goes to zero"],
+        "answer": "increases"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In an ADC, “quantization noise” arises because:",
+        "options": ["voltage fluctuates", "finite resolution rounds analog values", "thermal noise dominates", "clock jitter"],
+        "answer": "finite resolution rounds analog values"
+      }
+    ]
+  },
+  {
+    "setId": 52,
+    "setName": "Set 52",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The Suez Canal connects which two seas?",
+        "options": ["Red Sea and Mediterranean", "Red Sea and Black Sea", "Arabian Sea and Mediterranean", "Caspian Sea and Red Sea"],
+        "answer": "Red Sea and Mediterranean"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In cache memory, “write-back” policy differs from “write-through” because:",
+        "options": ["updates only on cache eviction", "updates main memory immediately", "reduces miss rate", "eliminates dirty blocks"],
+        "answer": "updates only on cache eviction"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In signal processing, a Butterworth filter is designed to have:",
+        "options": ["maximally flat passband", "linear phase response", "steepest stopband", "equiripple passband"],
+        "answer": "maximally flat passband"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In a synchronous generator, if excitation is increased beyond rated, the terminal voltage:",
+        "options": ["drops", "rises", "remains constant", "oscillates"],
+        "answer": "rises"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In embedded systems, watchdog timers are primarily used for:",
+        "options": ["debugging", "system recovery", "clock synchronization", "memory protection"],
+        "answer": "system recovery"
+      }
+    ]
+  },
+  {
+    "setId": 53,
+    "setName": "Set 53",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "The historic “Magna Carta” was signed in which year?",
+        "options": ["1215", "1315", "1115", "1415"],
+        "answer": "1215"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In pipelined processors, “forwarding” is used to:",
+        "options": ["avoid pipeline stalls", "increase memory latency", "simplify instruction set", "reduce branch misprediction"],
+        "answer": "avoid pipeline stalls"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In error-correcting codes, Hamming distance of a code determines:",
+        "options": ["code length", "error detection and correction capability", "bit rate", "throughput"],
+        "answer": "error detection and correction capability"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electronics",
+        "question": "For a Buck converter, increasing duty cycle:",
+        "options": ["decreases output voltage", "increases output voltage", "does not affect voltage", "inverts voltage"],
+        "answer": "increases output voltage"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In microcontrollers, a “brown-out reset” occurs when:",
+        "options": ["voltage rises above threshold", "voltage drops below threshold", "clock fails", "temperature rises"],
+        "answer": "voltage drops below threshold"
+      }
+    ]
+  },
+  {
+    "setId": 54,
+    "setName": "Set 54",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Which African country has the largest population?",
+        "options": ["Nigeria", "Egypt", "Ethiopia", "South Africa"],
+        "answer": "Nigeria"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In network routing, OSPF uses which algorithm for path computation?",
+        "options": ["Bellman-Ford", "Dijkstra", "A*", "Floyd-Warshall"],
+        "answer": "Dijkstra"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In a FIR digital filter, the phase response is:",
+        "options": ["linear", "logarithmic", "exponential", "random"],
+        "answer": "linear"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In a synchronous motor, leading power factor operation is achieved by:",
+        "options": ["underexcitation", "overexcitation", "open-circuit", "shorting rotor"],
+        "answer": "overexcitation"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In SPI communication, the maximum data rate is limited by:",
+        "options": ["clock frequency", "slave select", "MOSI line only", "cable length"],
+        "answer": "clock frequency"
+      }
+    ]
+  },
+  {
+    "setId": 55,
+    "setName": "Set 55",
+    "questions": [
+      {
+        "id": "Q1",
+        "domain": "GK",
+        "question": "Who invented the first mechanical computer called “Analytical Engine”?",
+        "options": ["Charles Babbage", "Alan Turing", "Konrad Zuse", "Blaise Pascal"],
+        "answer": "Charles Babbage"
+      },
+      {
+        "id": "Q2",
+        "domain": "CS",
+        "question": "In superscalar architecture, “out-of-order execution” helps to:",
+        "options": ["reduce pipeline stalls", "increase instruction fetch", "simplify compiler design", "reduce cache misses"],
+        "answer": "reduce pipeline stalls"
+      },
+      {
+        "id": "Q3",
+        "domain": "IT",
+        "question": "In RSA, the security depends on:",
+        "options": ["discrete log problem", "factoring large integers", "hash collisions", "elliptic curves"],
+        "answer": "factoring large integers"
+      },
+      {
+        "id": "Q4",
+        "domain": "Electrical",
+        "question": "In a 3-phase transformer, open-delta connection:",
+        "options": ["reduces efficiency", "allows operation with 2 transformers", "cannot supply load", "doubles voltage"],
+        "answer": "allows operation with 2 transformers"
+      },
+      {
+        "id": "Q5",
+        "domain": "Electronics",
+        "question": "In an ADC, increasing the number of bits:",
+        "options": ["decreases resolution", "increases resolution", "increases noise", "reduces sampling rate"],
+        "answer": "increases resolution"
+      }
+    ]
   }
 ]
