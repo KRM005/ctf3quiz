@@ -1,0 +1,97 @@
+[
+  {
+    "question": "What is the time complexity of the merge sort algorithm in the average case?",
+    "options": ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+    "answer": "O(n log n)"
+  },
+  {
+    "question": "Which data structure uses LIFO (Last In First Out) order?",
+    "options": ["Queue", "Stack", "Linked List", "Array"],
+    "answer": "Stack"
+  },
+  {
+    "question": "In digital logic, what does XOR stand for?",
+    "options": ["Exclusive OR", "Extra OR", "Extended OR", "None of the above"],
+    "answer": "Exclusive OR"
+  },
+  {
+    "question": "Which layer of the OSI model is responsible for routing?",
+    "options": ["Data Link Layer", "Network Layer", "Transport Layer", "Application Layer"],
+    "answer": "Network Layer"
+  },
+  {
+    "question": "What is the SI unit of electrical resistance?",
+    "options": ["Volt", "Ampere", "Ohm", "Watt"],
+    "answer": "Ohm"
+  },
+  {
+    "question": "What is the purpose of a capacitor in an electrical circuit?",
+    "options": ["To store electrical energy", "To regulate current flow", "To increase voltage", "To decrease resistance"],
+    "answer": "To store electrical energy"
+  },
+  {
+    "question": "Which of the following is a branch of thermodynamics?",
+    "options": ["Equilibrium thermodynamics", "Classical thermodynamics", "Chemical thermodynamics", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which law of thermodynamics states that energy cannot be created or destroyed?",
+    "options": ["Zeroth law", "First law", "Second law", "Third law"],
+    "answer": "First law"
+  },
+  {
+    "question": "What is the principle of superposition in wave theory?",
+    "options": ["Waves cannot interfere with each other", "The resultant displacement is the sum of individual displacements", "Waves always travel in the same direction", "None of the above"],
+    "answer": "The resultant displacement is the sum of individual displacements"
+  },
+  {
+    "question": "What is the derivative of a function?",
+    "options": ["The rate of change of the function", "The area under the curve of the function", "The slope of the function", "Both a and c"],
+    "answer": "Both a and c"
+  },
+  {
+    "question": "Which of the following is a type of thermodynamic system?",
+    "options": ["Open system", "Closed system", "Isolated system", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What is the purpose of the 'static' keyword in C programming?",
+    "options": ["To declare a constant variable", "To declare a variable with a fixed memory location", "To declare a variable with a fixed value", "To declare a variable with a fixed data type"],
+    "answer": "To declare a variable with a fixed memory location"
+  },
+  {
+    "question": "What is the difference between a shallow copy and a deep copy in programming?",
+    "options": ["A shallow copy copies only the references, while a deep copy copies the actual objects", "A shallow copy copies the actual objects, while a deep copy copies only the references", "There is no difference", "A shallow copy is faster than a deep copy"],
+    "answer": "A shallow copy copies only the references, while a deep copy copies the actual objects"
+  },
+  {
+    "question": "What is the purpose of an operational amplifier in electronics?",
+    "options": ["To amplify signals", "To filter signals", "To convert analog signals to digital", "To store signals"],
+    "answer": "To amplify signals"
+  },
+  {
+    "question": "What is the difference between a process and a thread in operating systems?",
+    "options": ["A process is a program in execution, while a thread is a single sequence of instructions within a process", "A process is a single sequence of instructions, while a thread is a program in execution", "There is no difference", "A process is faster than a thread"],
+    "answer": "A process is a program in execution, while a thread is a single sequence of instructions within a process"
+  },
+  {
+    "question": "What is the chain rule in differentiation?",
+    "options": ["A rule for differentiating products of functions", "A rule for differentiating compositions of functions", "A rule for integrating functions", "A rule for solving equations"],
+    "answer": "A rule for differentiating compositions of functions"
+  },
+  {
+    "question": "What is the purpose of the 'extern' keyword in C programming?",
+    "options": ["To declare a variable that is defined in another file", "To declare a constant variable", "To declare a function that is defined in another file", "To declare a variable with a fixed value"],
+    "answer": "To declare a variable that is defined in another file"
+  },
+  {
+    "question": "What is the purpose of the 'volatile' keyword in C programming?",
+    "options": ["To declare a variable that can be modified by an external source", "To declare a constant variable", "To declare a variable with a fixed value", "To declare a variable that cannot be modified"],
+    "answer": "To declare a variable that can be modified by an external source"
+  },
+  {
+    "question": "What is the difference between a compiler and an interpreter?",
+    "options": ["A compiler translates the entire program at once, while an interpreter translates the program line by line", "A compiler translates the program line by line, while an interpreter translates the entire program at once", "There is no difference", "A compiler is faster than an interpreter"],
+    "answer": "A compiler translates the entire program at once, while an interpreter translates the program line by line"
+  }
+]
